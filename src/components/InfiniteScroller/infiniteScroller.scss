@@ -24,6 +24,14 @@
             rgba(0, 0, 0, 0));
 }
 
+@media screen and (max-width: 415px) {
+
+    .wrapper {
+        display: none;
+    }
+
+}
+
 @keyframes scrollLeft {
     to {
         left: -200px;

@@ -108,6 +108,7 @@
                     ul {
                         list-style: none;
                         display: flex;
+                        flex-wrap: wrap;
                         justify-content: space-between;
                         width: 100%;
 
@@ -116,11 +117,27 @@
                             padding: 1rem;
                             background-color: #5e17eb;
                             border-radius: 16px;
+                            margin-bottom: 1rem;
                         }
                     }
                 }
 
             }
         }
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .projectsCardsList {
+        flex-direction: column;
+
+        .projectCard {
+            width: 100% !important;
+        }
+
+    }
+
+    .animationContainer {
+        display: none;
     }
 }
