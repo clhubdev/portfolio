@@ -1,13 +1,17 @@
+'use client'
+
 import Link from "next/link";
 import './header.scss';
 import AnimatedTitle from "../AnimatedTitle/AnimatedTitle";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
 
     const navLinks = [
         { href: "/", label: "Accueil" },
-        { href: "/apropos", label: "À propos" },
-        { href: "/projets", label: "Projets" },
+        // { href: "/apropos", label: "À propos" },
+        { href: "/#myWork", label: "Projets" },
         { href: "/contact", label: "Contact" },
     ];
 
@@ -21,9 +25,8 @@ export default function Header() {
                             <li key={href}>
                                 <Link
                                     href={href}
-                                // className={pathname === href ? "active" : ""}
-                                // aria-current={pathname === href ? "page" : undefined}
-                                // onClick={() => setMenuOpen(false)}
+                                    className={pathname === href ? "active" : ""}
+                                    aria-current={pathname === href ? "page" : undefined}
                                 >
                                     {label}
                                 </Link>
