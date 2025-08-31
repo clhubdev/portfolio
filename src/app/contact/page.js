@@ -2,9 +2,7 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import styles from "./page.module.scss";
 import { FiMail } from "react-icons/fi";
 import { BsTelephoneOutbound } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaRegMap } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegMap } from "react-icons/fa";
 import Link from "next/link";
 
 
