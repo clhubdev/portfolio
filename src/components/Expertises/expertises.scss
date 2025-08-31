@@ -1,0 +1,49 @@
+.expertises {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .expertisesListContainer {
+        display: flex;
+
+        .expertiseCard {
+            display: flex;
+            border: 1px solid white;
+
+            .expertiseTitle {
+                display: flex;
+                margin: 2rem;
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 2rem;
+
+                    .underline {
+                        background-color: transparent;
+                        background-image: linear-gradient(transparent 60%, var(--underline-color, #fa84e2) 60%);
+                        background-repeat: no-repeat;
+                        background-size: 100% 0.8em;
+                        background-position: 0 90%;
+                        transition: background-size 0.25s ease-in;
+
+                        &:hover {
+                            background-size: 100% 150%;
+                        }
+                    }
+                }
+            }
+
+            .expertiseText {
+                display: flex;
+                margin: 2rem;
+            }
+        }
+    }
+}

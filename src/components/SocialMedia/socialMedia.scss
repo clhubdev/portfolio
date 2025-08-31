@@ -1,0 +1,25 @@
+.iconsFooter {
+
+    .mediaList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    li {
+        transition: all 0.3s ease-in-out;
+
+        a:focus-visible {
+            outline: 5px solid var(--important);
+            outline-offset: 5px;
+            border-radius: 3px;
+        }
+
+        &:hover {
+            color: var(--title);
+            scale: 1.4;
+        }
+    }
+}

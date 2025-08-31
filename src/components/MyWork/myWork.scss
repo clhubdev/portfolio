@@ -1,0 +1,126 @@
+.myWork {
+    height: fit-content;
+    display: flex;
+    padding: 2rem;
+
+    .animationContainer {
+        width: 35%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        height: fit-content;
+
+        h2 {
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .projectsCardsList {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .projectCard {
+                height: 100%;
+                flex: 1;
+                width: 40%;
+                cursor: pointer;
+
+                .cardContent {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: solid 1px white;
+                    border-radius: 16px;
+                    padding: 2rem;
+                    height: 100%;
+                    min-height: 250px;
+                    width: 100%;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        background-image: url('/epi_snap.png');
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 16px;
+                        transition: transform 0.5s ease;
+                        z-index: 0;
+                    }
+
+                    &:hover::before {
+                        transform: scale(1.1);
+                    }
+
+                    h3,
+                    .hoverText {
+                        position: relative;
+                        z-index: 1;
+                        padding: 0.25rem 0.5rem;
+                        font-weight: bold;
+                        color: white;
+                        font-size: 2rem;
+                        background-color: #5e17ebd5;
+                        border-radius: 12px;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .hoverText {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%); // recentre parfaitement
+                        opacity: 0;
+                        font-size: 1rem;
+                        text-align: center;
+
+                    }
+
+                    &:hover h3 {
+                        opacity: 0;
+                    }
+
+                    &:hover .hoverText {
+                        opacity: 1;
+                    }
+
+                    .actions {
+                        align-self: flex-end;
+                        z-index: 500;
+                    }
+                }
+
+                .tags {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        li {
+                            text-decoration: none;
+                            padding: 1rem;
+                            background-color: #5e17eb;
+                            border-radius: 16px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

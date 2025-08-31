@@ -1,0 +1,58 @@
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 24;
+}
+
+#purple {
+  color: #5e17eb;
+}
+
+.animatedTitle {
+  font-size: 2rem;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  width: max-content;
+}
+
+.animatedTitle::before,
+.animatedTitle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.animatedTitle::before {
+  background: var(--background);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.animatedTitle::after {
+  width: 0.125em;
+  background: rgb(255, 255, 255);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

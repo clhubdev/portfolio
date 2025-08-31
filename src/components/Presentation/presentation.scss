@@ -1,0 +1,115 @@
+.presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    overflow: clip;
+
+    .videoBg {
+        position: absolute;
+        inset: 0; // top/right/bottom/left: 0
+        z-index: 0;
+    }
+
+    .videoBg .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // équiv. background-size: cover pour une vidéo
+    }
+
+    .videoBg .overlay {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, var(--background) 100%);
+        pointer-events: none;
+    }
+
+    .titleContainer {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .availability {
+            position: relative;
+            display: inline-block;
+            /* le badge s’ajuste au contenu */
+            background-color: rgba(0, 128, 49, 0.598);
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            /* padding de base */
+            padding-left: 1.75rem;
+            /* espace pour la LED */
+            border-radius: 16px;
+            line-height: 1.2;
+            /* plus prévisible pour l’alignement */
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0.75rem;
+                /* à l’intérieur du padding gauche */
+                top: 50%;
+                /* centre vertical */
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #18c36b;
+                box-shadow: 0 0 6px rgba(24, 195, 107, 0.8);
+
+                /* Animation de clignotement (ON/OFF franc) */
+                animation: led-blink 1.2s steps(2, end) infinite;
+            }
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            width: 50%;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 20;
+            margin-top: 3rem;
+
+            button {
+                background-color: #5e17eb;
+                padding: 1rem;
+                color: white;
+                border-radius: 16px;
+            }
+        }
+    }
+
+}
+
+@keyframes led-blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0.2;
+    }
+}

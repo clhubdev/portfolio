@@ -1,0 +1,32 @@
+.formContact {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10;
+    div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 0.25rem;
+        }
+
+        input, textarea{
+            border-radius: 16px;
+            height: 2rem;
+            padding-left: 1rem;
+        }
+
+        textarea {
+            height: 20rem;
+            padding-top: 1rem;
+        }
+    }
+
+    button {
+    background-color: #5e17eb;
+      padding: 1rem;
+      color: white;
+      border-radius: 16px;
+    }
+}

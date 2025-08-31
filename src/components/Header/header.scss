@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    z-index: 10000; 
+
+    .headerContainer {
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%; 
+        margin: 0 auto;
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 1.5rem; 
+                margin: 0;
+                padding: 0;
+
+                li {
+                    a {
+                        transition: color 0.2s;
+                        padding: 0.5rem 1rem;
+
+                        &:hover {
+                            color: #5e17eb;
+                            background-color: #5e17eb10;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
