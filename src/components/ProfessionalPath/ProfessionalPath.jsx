@@ -9,19 +9,32 @@ export default function ProfessionalPath() {
 
     const items = [
         {
-            title: "Développeur Front-End — 2023 à aujourd’hui",
-            content:
-                "Travail sur des applications React/Next.js, intégration d’API, optimisation des performances et accessibilité."
+            title: "🎓 Titre RNCP (niveau VI) Concepteur développeur d’application",
+            content:"Diplôme reconnu par l'état (Bac +3/4), 3WA en alternance au sein de l'entreprise l'Épi du fermier"
         },
         {
-            title: "Alternance — 2021 à 2023",
+            title: "L'ÉPI du Fermier, Nantes // Développeur fullstack // Janvier 2023-Février 2025",
             content:
-                "Participation à la refonte d’un design system, mise en place de tests et CI/CD."
+                "Conception, développement et maintenance d’un site de click & collect pour un réseau de quatre magasins (Symfony). Conception, développement et maintenance d’un outil de gestion des stocks et des tarifs, interconnecté au système d’encaissement du réseau(Symfony). Conception et développement d’une application de gestion des emplois du temps des salariés, destinée aux managers (Next.js). Mise en place de la méthodologie SCRUMBAN."
         },
         {
-            title: "Stage — 2020",
+            title: "🎓 Titre RNCP (niveau V) Développeurintégrateur en réalisation d'applications web",
+            content:"Diplôme reconnu par l'état (Bac +2), 3WA en alternance au sein de l'entreprise l'Épi du fermier"
+        },
+        {
+            title: "Crédit agricole Ile-de-France, Paris VIème // Conseiller de clientèle // Avril 2020-Octobre 2021",
             content:
-                "Découverte des bonnes pratiques, revue de code, documentation et support équipe."
+                "Gestion portefeuille de + 600 clients. Commercialisation de produits bancaires, financiers et assurantiels."
+        },
+        {
+            title: "Cleverside, La Défense // Assistant RH // Novembre 2019-Juillet 2020",
+            content:
+                "Gestion administrative et commerciale + 100 salariés portés. Suivi de la conformité sociale et fiscale de l’entreprise."
+        },
+        {
+            title: "🎓 Université Paris II Panthéon-Assas // Maitrise en Droit des affaires // 2019",
+            content:
+                "Droit des contrats. Droit des marchés financiers. Droit des entreprises en difficulté. Droit du commerce international."
         }
     ];
 
