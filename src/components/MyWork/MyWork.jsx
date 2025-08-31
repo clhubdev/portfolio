@@ -5,7 +5,7 @@ import { IoLogoGithub } from "react-icons/io5";
 
 export default function MyWork() {
     return (
-        <section className='myWork'>
+        <section className='myWork' id='myWork'>
 
             <div className='animationContainer'>
                 <DotLottieReact
