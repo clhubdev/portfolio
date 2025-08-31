@@ -14,6 +14,12 @@
   width: max-content;
 }
 
+@media (max-width: 418px) {
+  .animatedTitle {
+    font-size: 1rem;
+  }
+}
+
 .animatedTitle::before,
 .animatedTitle::after {
   content: "";
@@ -26,15 +32,13 @@
 
 .animatedTitle::before {
   background: var(--background);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 .animatedTitle::after {
   width: 0.125em;
   background: rgb(255, 255, 255);
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 

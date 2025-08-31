@@ -15,6 +15,7 @@
 
         .expertiseCard {
             display: flex;
+            flex-direction: column;
             border: 1px solid white;
 
             .expertiseTitle {
@@ -45,5 +46,18 @@
                 margin: 2rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .expertises {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1062px) {
+    .expertisesListContainer {
+        flex-direction: column;
+        margin: 0;
     }
 }
