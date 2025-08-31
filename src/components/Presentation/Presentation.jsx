@@ -1,7 +1,8 @@
-import InfiniteScroller from "../InfiniteScroller/InfiniteScroller"
-import ScrollBtn from "../ScrollBtn/ScrollBtn"
-import SocialMedia from "../SocialMedia/SocialMedia"
-import "./presentation.scss"
+import InfiniteScroller from "../InfiniteScroller/InfiniteScroller";
+import ScrollBtn from "../ScrollBtn/ScrollBtn";
+import SocialMedia from "../SocialMedia/SocialMedia";
+import "./presentation.scss";
+import Link from "next/link";
 
 export default function Presentation() {
     return (
@@ -36,8 +37,24 @@ export default function Presentation() {
                 <SocialMedia />
 
                 <div className="actions">
-                    <button>Télécharger mon CV</button>
-                    <button>Voir mes projets</button>
+                    <Link 
+                        href='/CV_HUBERT_Clément_dev_web_FS.pdf'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="CV HUBERT Clément au format PDF"
+                        title="Voir mon CV"
+                    >
+                        <button>Télécharger mon CV</button>
+                    </Link>
+
+                    <Link 
+                        href='/#myWork'
+                        rel="noopener noreferrer"
+                        aria-label="Lien vers section mes projets"
+                        title="Voir mes projets"
+                    >
+                        <button>Voir mes projets</button>
+                    </Link>
                 </div>
             </div>
 
