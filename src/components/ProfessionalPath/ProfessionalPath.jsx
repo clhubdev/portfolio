@@ -18,7 +18,7 @@ export default function ProfessionalPath() {
                 "Conception, développement et maintenance d’un site de click & collect pour un réseau de quatre magasins (Symfony). Conception, développement et maintenance d’un outil de gestion des stocks et des tarifs, interconnecté au système d’encaissement du réseau(Symfony). Conception et développement d’une application de gestion des emplois du temps des salariés, destinée aux managers (Next.js). Mise en place de la méthodologie SCRUMBAN."
         },
         {
-            title: "🎓 Titre RNCP (niveau V) Développeurintégrateur en réalisation d'applications web",
+            title: "🎓 Titre RNCP (niveau V) Développeur intégrateur en réalisation d'applications web",
             content:"Diplôme reconnu par l'état (Bac +2), 3WA en alternance au sein de l'entreprise l'Épi du fermier"
         },
         {
