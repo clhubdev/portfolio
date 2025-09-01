@@ -16,7 +16,10 @@ export default function Expertises() {
                         <h3><span className='underline'>Conception</span> d'applications web</h3>
                     </div>
 
-                    <p className='expertiseText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi, reprehenderit voluptas laboriosam perferendis praesentium, assumenda cumque recusandae odit expedita molestias aut soluta deserunt corrupti. Inventore aliquid eos debitis voluptatum.</p>
+                    <ul className='expertiseText'>
+                        <li>Analyser les besoins clients et maquetter une application.</li>
+                        <li>Définir l’architecture logicielle d’une application.</li>
+                    </ul>
                 </div>
 
                 <div className='expertiseCard'>
@@ -25,7 +28,13 @@ export default function Expertises() {
                         <h3><span className='underline' style={{ "--underline-color": "#5a17eb" }}>Développement</span> d'applications web</h3>
                     </div>
 
-                    <p className='expertiseText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi, reprehenderit voluptas laboriosam perferendis praesentium, assumenda cumque recusandae odit expedita molestias aut soluta deserunt corrupti. Inventore aliquid eos debitis voluptatum.</p>
+                    <ul className='expertiseText'>
+                        <li>Développer des interfaces utilisateurs.</li>
+                        <li>Développer des composants métiers.</li>
+                        <li>Mettre en place une base de données relationnelle et développer les composants d’accès aux données SQL.</li>
+                        <li>Préparer et exécuter les plans de tests d'une application.</li>
+                        <li>Contribuer à la mise en production dans une démarche DevOps.</li>
+                    </ul>
                 </div>
 
                 <div className='expertiseCard'>
@@ -33,7 +42,10 @@ export default function Expertises() {
                         <RiTeamLine style={{fontSize: "4rem", marginRight: "1rem"}}/>
                         <h3><span className='underline' style={{ "--underline-color": "orange" }}>Gestion</span> de projet</h3>
                     </div>
-                    <p className='expertiseText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi, reprehenderit voluptas laboriosam perferendis praesentium, assumenda cumque recusandae odit expedita molestias aut soluta deserunt corrupti. Inventore aliquid eos debitis voluptatum.</p>
+                    <ul className='expertiseText'>
+                        <li>Élaborer et maintenir la documentation projet (cahier des charges, user stories, diagrammes UML).</li>
+                        <li>Collaborer en mode Agile.</li>
+                    </ul>
                 </div>
             </div>
 
