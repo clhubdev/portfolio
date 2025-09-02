@@ -43,6 +43,7 @@ export default function Presentation() {
                         rel="noopener noreferrer"
                         aria-label="CV HUBERT Clément au format PDF"
                         title="Voir mon CV"
+                        prefetch={false}
                     >
                         Télécharger mon CV
                     </Link>
