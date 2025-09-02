@@ -4,7 +4,6 @@ import SocialMedia from '../SocialMedia/SocialMedia';
 export default function Footer() {
     return(
         <footer
-            role="contentinfo"
             aria-label="pied de page avec informations de contact et liens réseaux sociaux"
         >
             <div className="footerContainer">
