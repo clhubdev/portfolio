@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         {/* START Iubenda Cookie Solution */}
         <Script id="iubenda-init" strategy="beforeInteractive">
