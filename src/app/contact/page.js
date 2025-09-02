@@ -68,7 +68,7 @@ export default function Contact() {
                             aria-label="CV HUBERT Clément au format PDF"
                             title="Voir mon CV"
                         >
-                            <button>Télécharger mon CV</button>
+                            Télécharger mon CV
                         </Link>
 
                         <Link
@@ -77,7 +77,7 @@ export default function Contact() {
                             aria-label="Lien vers section mes projets"
                             title="Voir mes projets"
                         >
-                            <button>Voir mes projets</button>
+                            Voir mes projets
                         </Link>
                     </div>
                 </section>
