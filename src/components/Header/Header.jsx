@@ -56,7 +56,6 @@ export default function Header() {
                 <nav
                     id="main-navigation"
                     className={menuOpen ? "open" : ""}
-                    role="navigation"
                     aria-label="Menu principal"
                 >
                     <ul>
