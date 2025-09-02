@@ -9,7 +9,7 @@ export default function Footer() {
         >
             <div className="footerContainer">
                 <p>
-                    &copy; {new Date().getFullYear()} <span id="purple">&lt;</span> Clément HUBERT <span id="purple">/&gt;</span>. Tous droits réservés.
+                    &copy; {new Date().getFullYear()} <span className="purple">&lt;</span> Clément HUBERT <span className="purple">/&gt;</span>. Tous droits réservés.
                 </p>
                 <SocialMedia /> 
             </div>
