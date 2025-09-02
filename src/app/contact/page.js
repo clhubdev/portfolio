@@ -62,7 +62,7 @@ export default function Contact() {
 
                     <div className={styles.actions}>
                         <Link
-                            href='/CV_HUBERT_Clément_dev_web_FS.pdf'
+                            href='/CV_HUBERT_Clement_dev_web_FS.pdf'
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="CV HUBERT Clément au format PDF"
