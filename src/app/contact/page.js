@@ -9,10 +9,10 @@ import Link from "next/link";
 export default function Contact() {
     return (
         <main className={styles.page}>
-            <section className={styles.contactTitle}>
+            <div className={styles.contactTitle}>
                 <h1>Prendre contact</h1>
                 <p>Vous recherchez votre prochain collaborateur ? Vous souhaitez concrétiser un projet web ? Faisons connaissances !</p>
-            </section>
+            </div>
 
             <div className={styles.contactContainer}>
                 <section className={styles.contactInfos}>
