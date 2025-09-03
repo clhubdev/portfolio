@@ -29,7 +29,7 @@ export default function MyWork() {
                     >
                         <div
                             className="cardContent"
-                            style={{ backgroundImage: "url('/epi_snap.png')" }}
+                            style={{ backgroundImage: "url('/epi_snap.webp')" }}
                         >
                             <span className='actions'>
                             </span>
@@ -54,7 +54,7 @@ export default function MyWork() {
                     >
                         <div
                             className="cardContent"
-                            style={{ backgroundImage: "url('/rh_snap.png')" }}
+                            style={{ backgroundImage: "url('/rh_snap.webp')" }}
                         >
                             <span className='actions'>
                             </span>
@@ -82,7 +82,7 @@ export default function MyWork() {
                     >
                         <div
                             className="cardContent"
-                            style={{ backgroundImage: "url('/myCarTeam_snap.png')" }}
+                            style={{ backgroundImage: "url('/myCarTeam_snap.webp')" }}
                         >
                             <span className='actions'>
                                 <IoLogoGithub style={{ fontSize: "3rem", color: "#5a17eb" }} />
@@ -112,7 +112,7 @@ export default function MyWork() {
                     >
                         <div
                             className="cardContent"
-                            style={{ backgroundImage: "url('/jad_snap.png')" }}
+                            style={{ backgroundImage: "url('/jad_snap.webp')" }}
                         >
                             <span className='actions'>
                             </span>
@@ -138,7 +138,7 @@ export default function MyWork() {
                     >
                         <div
                             className="cardContent"
-                            style={{ backgroundImage: "url('/portfolio_snap.png')" }}
+                            style={{ backgroundImage: "url('/portfolio_snap.webp')" }}
                         >
                             <span className='actions'>
                                 <IoLogoGithub style={{ fontSize: "3rem", color: "#5a17eb" }} />

@@ -16,7 +16,7 @@ export default function Presentation() {
                     loop
                     playsInline
                     preload="none"
-                    poster="presentation_bg_poster.jpg"
+                    poster="presentation_bg_poster.webp"
                     fetchPriority="high"
                 >
                     <source src="presentation_bg.mp4" type="video/mp4" />
