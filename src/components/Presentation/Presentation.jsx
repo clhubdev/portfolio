@@ -16,10 +16,10 @@ export default function Presentation() {
                     loop
                     playsInline
                     preload="none"
-                    poster="presentation_bg_poster.webp"
+                    poster="/presentation_bg_poster.webp"
                     fetchPriority="high"
                 >
-                    <source src="presentation_bg.mp4" type="video/mp4" />
+                    <source src="presentation_bg.mp4" type="video/mp4" media="(min-width: 768px)" />
                 </video>
                 <div className="overlay" />
             </div>
