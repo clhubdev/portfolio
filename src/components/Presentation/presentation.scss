@@ -122,3 +122,14 @@
         opacity: 0.2;
     }
 }
+
+@media (max-width: 767px) {
+  .presentation .videoBg .video {
+    display: none;
+  }
+
+  /* On force l’image poster en fond pour garder la même mise en page */
+  .presentation .videoBg {
+    background: url("/presentation_bg_poster.webp") center / cover no-repeat;
+  }
+}
