@@ -1,0 +1,217 @@
+.LangageBento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    padding: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    flex: 1;
+    width: 80%;
+    height: 100%;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10 {
+    border-radius: 16px;
+    background: #1a171b3d;
+    color: #fff;
+}
+
+.div1 {
+    grid-row: span 2 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div6 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div8 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div9 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div10 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent>div {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.parent>div>svg.icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: soft-bounce var(--dur) ease-in-out var(--delay) infinite;
+
+}
+
+
+
+@keyframes soft-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(calc(-1 * var(--amp))) scale(1.02);
+    }
+}
+
+.div1 {
+    --amp: 3%;
+    --dur: 1.90s;
+    --delay: 0s;
+}
+
+.div2 {
+    --amp: 4%;
+    --dur: 2.10s;
+    --delay: -0.10s;
+}
+
+.div3 {
+    --amp: 2.5%;
+    --dur: 1.70s;
+    --delay: 0s;
+}
+
+.div4 {
+    --amp: 3.5%;
+    --dur: 2.00s;
+    --delay: -0.20s;
+}
+
+.div5 {
+    --amp: 3%;
+    --dur: 1.80s;
+    --delay: 0s;
+}
+
+.div6 {
+    --amp: 2.8%;
+    --dur: 1.60s;
+    --delay: -0.15s;
+}
+
+.div7 {
+    --amp: 4.2%;
+    --dur: 2.20s;
+    --delay: 0s;
+}
+
+.div8 {
+    --amp: 3.2%;
+    --dur: 1.90s;
+    --delay: -0.05s;
+}
+
+.div9 {
+    --amp: 3.8%;
+    --dur: 2.05s;
+    --delay: 0s;
+}
+
+.div10 {
+    --amp: 2.6%;
+    --dur: 1.70s;
+    --delay: -0.12s;
+}
