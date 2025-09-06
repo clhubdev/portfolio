@@ -2,7 +2,7 @@
     height: fit-content;
     display: flex;
     flex-direction: row-reverse;
-    padding: 3rem;
+    padding: 0rem 3rem 0 3rem;
 
     .animationContainer {
         width: 35%;
@@ -14,7 +14,7 @@
         flex: 1;
         align-items: center;
         height: fit-content;
-        padding: 3rem;
+        padding: 0rem 3rem 3rem 3rem;
 
         h2 {
             font-size: 3rem;
