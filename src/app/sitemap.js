@@ -1,15 +1,15 @@
-const BASE_URL = 'https://clement-hubert.fr'
+const BASE_URL = 'https://www.clement-hubert.fr'
 
 /** @type {import('next').MetadataRoute.Sitemap} */
 export default async function sitemap() {
   const staticRoutes = [
-    '',
-    '/contact',
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: path === '' ? 1 : 0.7,
+    {link: '', priority: 1, lastModified: '2025-09-11'},
+    {link: '/contact', priority: 0.5, lastModified: '2025-09-11'},
+    {link: '/mentions-legales', priority: 0.1, lastModified: '2025-09-11'}
+  ].map((item) => ({
+    url: `${BASE_URL}${item.link}`,
+    lastModified: `${item.lastModified}`,
+    priority: item.priority,
   }))
 
   return [
