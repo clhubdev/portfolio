@@ -9,13 +9,15 @@ import Footer from "@/components/Footer/Footer";
 const mainFont = Space_Grotesk({
   subsets: ["latin"],
 });
+
 export const metadata = {
-  title: "HUBERT Clément - développeur web",
+  title: "HUBERT Clément - Développeur web fullstack",
   description: "Portfolio HUBERT Clément, développeur web fullstack",
   keywords: ["développeur web", "fullstack", "React", "Next.js", "portfolio", "JavaScript", "Docker", "Symfony", "PHP"],
   authors: [{ name: "Clément Hubert", url: "https://clement-hubert.vercel.app" }],
   creator: "Clément Hubert",
   publisher: "Clément Hubert",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }) {
