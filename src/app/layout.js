@@ -18,6 +18,8 @@ export const metadata = {
   creator: "Clément Hubert",
   publisher: "Clément Hubert",
   robots: { index: true, follow: true },
+  metadataBase: new URL('https://www.clement-hubert.fr'),
+  alternates: { canonical: '/' },
 };
 
 export default function RootLayout({ children }) {
