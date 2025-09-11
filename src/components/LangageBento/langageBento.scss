@@ -4,13 +4,14 @@
     align-items: center;
     height: 50vh;
     padding: 3rem;
+
+    h2 {
+        text-align: center;
+        margin: 1rem;
+        font-size: 3rem;
+    }
 }
 
-h2 {
-    text-align: center;
-    margin: 1rem;
-    font-size: 3rem;
-}
 
 .parent {
     display: grid;
