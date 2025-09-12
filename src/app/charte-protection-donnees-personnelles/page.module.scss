@@ -1,0 +1,37 @@
+.dataProtection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem;
+    overflow: clip;
+
+    .wrap {
+        position: absolute;
+        inset: 1rem;
+        z-index: -1;
+        display: grid;
+    }
+
+    .contractLogo {
+        width: clamp(120px, 50vmin, 720px);
+        height: clamp(120px, 50vmin, 720px);
+        color: #5e17eb19;
+        filter: drop-shadow(0 0 2rem rgba(0, 0, 0, .15));
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    p {
+        margin-left: 1rem;
+        text-align: justify;
+    }
+}

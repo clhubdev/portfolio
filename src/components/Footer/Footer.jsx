@@ -3,7 +3,7 @@ import SocialMedia from '../SocialMedia/SocialMedia';
 import Link from 'next/link';
 
 export default function Footer() {
-    return(
+    return (
         <footer
             aria-label="pied de page avec informations de contact et liens réseaux sociaux"
         >
@@ -11,10 +11,21 @@ export default function Footer() {
                 <p>
                     &copy; {new Date().getFullYear()} <span className="purple">&lt;</span> Clément HUBERT <span className="purple">/&gt;</span>. Tous droits réservés.
                 </p>
-                <p>
-                    <Link href="/mentions-legales">Mentions Légales</Link>
-                </p>
-                <SocialMedia /> 
+
+                <SocialMedia />
+
+                <div className='legalContainer'>
+                    <span className="separator" aria-hidden="true" />
+
+                    <div className='legalLinks'>
+                    <p>
+                        <Link href="/mentions-legales">Mentions Légales</Link>
+                    </p>
+                    <p>
+                        <Link href="/charte-protection-donnees-personnelles">Charte de Protection des Données Personnelles</Link>
+                    </p>
+                    </div>
+                </div>
             </div>
         </footer>
     )
