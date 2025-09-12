@@ -1,6 +1,6 @@
 footer {
     box-shadow: rgba(0, 0, 0, 0.25) 0px -14px 28px, rgba(0, 0, 0, 0.22) 0px -10px 10px;
-    
+
     span {
         font-weight: bold;
         color: white;
@@ -18,4 +18,22 @@ footer {
     gap: 1.5rem;
     height: auto;
     margin: 0 auto;
+}
+
+.legalContainer {
+    text-align: left;
+    display: flex;
+
+    .legalLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .separator {
+        width: 1px; 
+        flex: 1;
+        background: white;
+        margin-right: 0.5rem;
+        opacity: 0.5;
+    }
 }

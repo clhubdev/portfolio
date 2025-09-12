@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.scss';
 import { GoLaw } from "react-icons/go";
 
@@ -38,7 +39,7 @@ export default function legal() {
 
             <h2 className={styles.subtitle}>Données personnelles</h2>
 
-            <p className={styles.text}>Le traitement de vos données à caractère personnel est régi par notre Charte du respect de la vie privée, disponible depuis la section &quot;Charte de Protection des Données Personnelles&quot;, conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 («RGPD»).</p>
+            <p className={styles.text}>Le traitement de vos données à caractère personnel est régi par notre <Link href='/charte-protection-donnees-personnelles'>Charte du respect de la vie privée, disponible depuis la section &quot;Charte de Protection des Données Personnelles&quot;</Link>, conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 («RGPD»).</p>
 
         </main>
     )
