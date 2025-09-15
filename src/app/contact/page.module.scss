@@ -68,6 +68,11 @@
           display: flex;
           gap: 10;
           align-items: center;
+
+          .infos {
+            color: #5e17eb;
+            font-weight: bold;
+          }
         }
       }
     }
