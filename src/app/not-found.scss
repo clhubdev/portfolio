@@ -1,0 +1,13 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+        margin-top: 1rem;
+        background-color: #5e17eb;
+        padding: 1rem;
+        color: white;
+        border-radius: 16px;
+    }
+}
