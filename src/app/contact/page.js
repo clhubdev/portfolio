@@ -23,7 +23,7 @@ export default function Contact() {
                             <FiMail style={{ fontSize: "2rem" }} />
                             <div>
                                 <div style={{ marginBottom: "0.5rem" }}>Email</div>
-                                <div>clhubertmail@gmail.com</div>
+                                <div className={styles.infos}>clhubertmail@gmail.com</div>
                             </div>
                         </div>
 
@@ -31,7 +31,7 @@ export default function Contact() {
                             <BsTelephoneOutbound style={{ fontSize: "2rem" }} />
                             <div>
                                 <div style={{ marginBottom: "0.5rem" }}>Téléphone</div>
-                                <div>06.23.55.07.18</div>
+                                <div className={styles.infos}>06.23.55.07.18</div>
                             </div>
                         </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                             <FaGithub style={{ fontSize: "2rem" }} />
                             <div>
                                 <div style={{ marginBottom: "0.5rem" }}>Github</div>
-                                <div>clhubdev</div>
+                                <Link className={styles.infos} href={"https://github.com/clhubdev"}>clhubdev</Link>
                             </div>
                         </div>
 
@@ -47,7 +47,7 @@ export default function Contact() {
                             <FaLinkedin style={{ fontSize: "2rem" }} />
                             <div>
                                 <div style={{ marginBottom: "0.5rem" }}>LinkedIn</div>
-                                <div>in/clementh-webdev</div>
+                                <Link className={styles.infos} href={'https://www.linkedin.com/in/clementh-webdev/'}>in/clementh-webdev</Link>
                             </div>
                         </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                             <FaRegMap style={{ fontSize: "2rem" }} />
                             <div>
                                 <div style={{ marginBottom: "0.5rem" }}>Mobilité</div>
-                                <div>Ile-de-France</div>
+                                <div className={styles.infos}>Ile-de-France</div>
                             </div>
                         </div>
                     </div>
